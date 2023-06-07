@@ -4,7 +4,7 @@ mov ah, 00h
 mov al, 13h
 int 0x10
 mov ah, 0Ch
-mov al, 15
+mov al, 7
 mov bh, 1
 .loop:
     inc cx
