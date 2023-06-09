@@ -19,3 +19,9 @@ successfully!
 # Notes
 - Text may take time to load. It may be because of the grey
   pixels loading up, but I just don't know lol.
+
+# Terminal Commands
+These are the terminal commands that are avaliable as of the test build:
+```
+t - Prints a test message: 'Hi!'
+```
