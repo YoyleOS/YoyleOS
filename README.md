@@ -20,6 +20,10 @@ successfully!
 # Notes
 - Text may take time to load. It may be because of the grey
   pixels loading up, but I just don't know lol.
+- The operating system uses real mode. I know protected mode
+  is alot better according to others but I like my BIOS
+  interrupts and I think using assembly will overall be easier
+  than using C.
 
 # Terminal Commands
 These are the terminal commands that are avaliable as of the test build:
