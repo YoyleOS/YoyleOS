@@ -67,6 +67,7 @@ int 0x10
 	jmp .key_input
 ; all of the stuff for the terminal. took me some time.
 .terminal:
+	mov cx, 0
 	mov ah, 0Eh
 	mov al, '$'
 	mov bl, 2
@@ -91,7 +92,7 @@ int 0x10
 .term_newline:
 	mov al, ' '
 	inc cx
-	cmp cx, 39
+	cmp cx, 38
 	je .read_command
 	jmp .write_pix2
 .write_pix2:
@@ -107,7 +108,7 @@ int 0x10
 	mov ah, 0Eh
 	mov al, ' '
 	inc cx
-	cmp cx, 39
+	cmp cx, 40
 	je .terminal
 	jmp .write_pix3
 .write_pix3:
@@ -128,7 +129,7 @@ int 0x10
 	mov ah, 0Eh
 	mov al, ' '
 	inc cx
-	cmp cx, 39
+	cmp cx, 38
 	je .terminal
 	jmp .write_pix4
 .write_pix4:
